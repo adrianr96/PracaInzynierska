@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".view.AddUserActivity">
+
+    <EditText
+        android:id="@+id/edit_text_add_user"
+        android:layout_width="234dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/spinner_countries"
+        android:layout_marginTop="19dp"
+        android:hint="User e-mail"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_add_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/edit_text_add_user"
+        android:layout_toEndOf="@+id/edit_text_add_user"
+        android:src="@drawable/ic_add_black" />
+
+    <!--<Button-->
+        <!--android:id="@+id/button_add_user"-->
+        <!--android:layout_width="365dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignStart="@+id/spinner_countries"-->
+        <!--android:layout_marginTop="28dp"-->
+        <!--android:text="Add User"-->
+        <!--tools:layout_editor_absoluteX="16dp"-->
+        <!--tools:layout_editor_absoluteY="102dp" />-->
+
+    <Spinner
+        android:id="@+id/spinner_countries"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="230dp" />
+
+    <ImageView
+        android:id="@+id/iv_call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/edit_text_add_user"
+
+        android:layout_alignEnd="@+id/spinner_countries"
+        android:src="@drawable/ic_call" />
+    <!--<Spinner-->
+        <!--android:id="@+id/spinner_countries"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+</RelativeLayout>
